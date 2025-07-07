@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Baloo 2', cursive;
+  background-color: #f2f9f1;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #5c9e6f;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+  font-size: 16px;
+}
+
+.menu li a:hover {
+  background-color: #3e7c54;
+  border-radius: 5px;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #7acfa6;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.submenu li a {
+  padding: 10px 15px;
+  color: #fff;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+main {
+  padding-top: 120px;
+  text-align: center;
+}
+
+h1 {
+  color: #2c5f3e;
+}
+
+.bienvenida {
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.animal-seccion {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.animal-seccion img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
